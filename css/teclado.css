@@ -1,0 +1,32 @@
+* {
+    margin: 2;
+    padding: 0;
+    list-style: none;
+}
+div#teclas {
+
+    width: 300px;
+}
+div#teclas ul {
+	width: 300px;
+	text-align: center;
+}
+div#teclas li {
+    display: inline;
+    border: 1px solid #999999;
+    padding: 10px;
+    line-height: 50px;
+    margin: 2px;
+}
+div#teclas li a {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Verdana, Arial, Helvetica;
+    text-decoration: none;
+}
+div#teclas li a.esconde {
+    color: #FFFFFF;
+}
+div#teclas li a.mostra {
+    color: #999999;
+}

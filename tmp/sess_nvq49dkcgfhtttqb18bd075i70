@@ -1,0 +1,9 @@
+id|s:1:"1";ip|s:3:"::1";cod|s:0:"";sql|s:760:"SELECT ap.*, 
+		(SELECT COUNT(DISTINCT(aa.cod_aula)) FROM aluno_pacote_aula aa WHERE aa.cod_pacote = ap.cod_pacote)AS qtde_aula,
+		(SELECT SUM(pa.valor) FROM pagto_aluno pa WHERE pa.cod_pacote = ap.cod_pacote AND pa.cod_atr = 3)AS desco,
+		(SELECT SUM(pa.valor) FROM pagto_aluno pa WHERE pa.cod_pacote = ap.cod_pacote AND pa.cod_atr = 2 LIMIT 1)AS acres,
+		(SELECT SUM(pa.valor) FROM pagto_aluno pa WHERE pa.cod_pacote = ap.cod_pacote AND pa.cod_atr = 1 AND pa.valor > 0)AS valor,
+		(SELECT COUNT(f.cod_fatura) FROM faturamento f WHERE f.cod_pacote = ap.cod_pacote AND f.pagto_status = 'S')AS recibo,
+		(SELECT COUNT(f.cod_fatura) FROM faturamento f WHERE f.cod_pacote = ap.cod_pacote)AS faturamento  
+		FROM aluno_pacote ap
+		WHERE ap.cod_aluno = '35'";

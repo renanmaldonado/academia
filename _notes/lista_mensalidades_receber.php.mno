@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_modalidade" value="name:cod_aula;datatype:int,name:desc_aula;datatype:string" />
+</info>

@@ -1,0 +1,11 @@
+id|s:1:"1";ip|s:14:"189.103.68.220";cod|s:0:"";sql|s:1010:"SELECT DISTINCT(pa.dt_vencimento), a.nome_aluno, pa.dt_vencimento, pa.cod_aluno,
+		(SELECT SUM(pa1.valor) FROM pagto_aluno pa1 WHERE pa1.cod_aluno = a.cod_aluno AND pa1.cod_atr = 1 AND pa1.quitado = 'N' AND pa1.dt_vencimento = pa.dt_vencimento)AS valor_final,
+		(SELECT SUM(pa1.valor) FROM pagto_aluno pa1 WHERE pa1.cod_aluno = a.cod_aluno AND pa1.cod_atr <> 4 AND pa1.quitado = 'N' AND pa1.dt_vencimento = pa.dt_vencimento)AS valor_total,
+		(SELECT SUM(pa1.valor) FROM pagto_aluno pa1 WHERE pa1.cod_aluno = a.cod_aluno AND pa1.cod_atr = 1 AND pa1.dt_vencimento = pa.dt_vencimento AND pa1.dt_vencimento >= '01/04/2015' AND pa1.dt_vencimento >= DATE(NOW()))AS devedor,
+		(SELECT SUM(pa1.valor) FROM pagto_aluno pa1 WHERE pa1.cod_aluno = a.cod_aluno AND pa1.cod_atr = 2)AS acrescimo,
+		(SELECT SUM(pa1.valor) FROM pagto_aluno pa1 WHERE pa1.cod_aluno = a.cod_aluno AND pa1.cod_atr = 3)AS desconto
+		FROM (pagto_aluno pa, aluno a)
+		
+		WHERE pa.cod_aluno = a.cod_aluno
+		AND pa.cod_atr = '1'
+		AND pa.quitado = 'N'";

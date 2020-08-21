@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_dia" value="name:cod_dia;datatype:int,name:desc_dia;datatype:string,name:en;datatype:string" />
+	<infoitem key="UD_remarcado" value="name:cod_aluno_dia_aula;datatype:int,name:cod_aluno_pacote_aula;datatype:int,name:remarcado;datatype:int,name:informacao;datatype:blob,name:dia;datatype:date,name:hr_inicio;datatype:time,name:hr_fim;datatype:time,name:cod_aluno_pacote_aula;datatype:int,name:cod_pacote;datatype:int,name:cod_aula;datatype:int,name:cod_aula_dia;datatype:int,name:status;datatype:string" />
+</info>

@@ -1,0 +1,8 @@
+id|s:1:"1";ip|s:12:"192.168.0.10";cod|s:0:"";sql|s:440:"SELECT f.cod_fatura, a.cod_aluno, a.nome_aluno, f.valor as valor_final, (f.valor - f.valor_pago) as valor_devedor, f.dt_vencimento, f.dt_previsao
+		FROM (faturamento f, aluno_pacote ap, aluno a)
+		WHERE f.cod_pacote = ap.cod_pacote
+		AND ap.cod_aluno = a.cod_aluno
+		AND f.pagto_status <> 'S'
+		AND f.valor_pago <> f.valor
+		 
+		AND MONTH(f.dt_vencimento) <= MONTH(NOW()) AND (f.dt_previsao <= DATE(NOW()) OR f.valor_pago < f.valor) ";

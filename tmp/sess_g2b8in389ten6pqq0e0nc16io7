@@ -1,0 +1,4 @@
+cod|s:0:"";sql|s:234:"SELECT p.*, (SELECT count(pa.cod_aula) FROM professor_aula pa WHERE pa.cod_professor = p.cod_professor AND pa.cod_aula_dia IS NULL)AS qtde_turma
+		FROM professor p
+		WHERE p.nome_professor LIKE '%%' 
+		ORDER BY p.nome_professor ASC";

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_ver" value="name:cod_pagto_aluno;datatype:int,name:cod_pacote_id;datatype:int,name:cod_aluno;datatype:int,name:valor;datatype:real,name:valor_pago;datatype:real,name:informacao;datatype:blob,name:dt_vencimento;datatype:date,name:dt_pagto;datatype:date,name:quitado;datatype:string" />
+</info>

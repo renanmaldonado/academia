@@ -1,0 +1,11 @@
+sql|s:854:"SELECT DISTINCT(pa.cod_aluno), a.nome_aluno, 
+		(SELECT SUM(pa1.valor) FROM pagto_aluno pa1 WHERE pa1.cod_aluno = a.cod_aluno AND pa1.cod_atr = 1 AND pa1.quitado = 'N')AS valor_final,
+		(SELECT SUM(pa1.valor) FROM pagto_aluno pa1 WHERE pa1.cod_aluno = a.cod_aluno AND pa1.cod_atr <> 4 AND pa1.quitado = 'N')AS valor_total,
+		(SELECT SUM(pa1.valor) FROM pagto_aluno pa1 WHERE pa1.cod_aluno = a.cod_aluno AND pa1.quitado = 'N' AND pa1.dt_vencimento >= '2015-04-01' AND pa1.dt_vencimento >= DATE(NOW()))AS devedor,
+		(SELECT SUM(pa1.valor) FROM pagto_aluno pa1 WHERE pa1.cod_aluno = a.cod_aluno AND pa1.cod_atr = 2)AS acrescimo,
+		(SELECT SUM(pa1.valor) FROM pagto_aluno pa1 WHERE pa1.cod_aluno = a.cod_aluno AND pa1.cod_atr = 3)AS desconto
+		FROM (pagto_aluno pa, aluno a)
+		
+		WHERE pa.cod_aluno = a.cod_aluno
+		AND pa.cod_atr = '1'
+		AND pa.quitado = 'N'";

@@ -1,0 +1,7 @@
+id|s:1:"1";ip|s:14:"189.103.70.131";cod|s:0:"";sql|s:252:"SELECT pa.cod_pagto_aluno, pa.cod_aluno, a.nome_aluno, pa.valor, pa.dt_pagto
+		FROM aluno a, aluno_pacote ai, pagto_aluno pa
+		WHERE a.cod_aluno = ai.cod_aluno
+		AND ai.cod_pacote = pa.cod_pacote
+		AND pa.cod_atr IN (4)
+		  
+		ORDER BY a.nome_aluno ASC";

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_aula" value="name:cod_aula;datatype:int,name:desc_aula;datatype:string,name:max_aluno;datatype:int,name:grupo;datatype:string,name:valor_padrao;datatype:real" />
+</info>

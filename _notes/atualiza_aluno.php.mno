@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_ver" value="name:cod_aluno;datatype:int,name:nome_aluno;datatype:string,name:telefone;datatype:string,name:email;datatype:string,name:status;datatype:string" />
+</info>

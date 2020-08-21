@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_dia" value="name:cod_dia;datatype:int,name:desc_dia;datatype:string" />
+</info>

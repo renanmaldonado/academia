@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_turma" value="name:cod_turma;datatype:int,name:cod_aula;datatype:int,name:cod_dia;datatype:int,name:qtde_alunos;datatype:int,name:hr_inicio;datatype:time,name:hr_fim;datatype:time,name:remarcar;datatype:string,name:hr_ant;datatype:int" />
+</info>

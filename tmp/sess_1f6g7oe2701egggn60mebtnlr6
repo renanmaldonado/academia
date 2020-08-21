@@ -1,0 +1,5 @@
+id|s:1:"1";ip|s:13:"189.103.83.26";cod|s:0:"";sql|s:92:"SELECT a.*
+			  FROM aluno a
+			  WHERE  a.status = 'S'
+			  
+			  ORDER BY a.nome_aluno ASC";

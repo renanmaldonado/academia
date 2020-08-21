@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_ver" value="name:cod_professor;datatype:int,name:nome_professor;datatype:string,name:telefone;datatype:string,name:dia_pagto;datatype:int,name:status;datatype:string" />
+</info>

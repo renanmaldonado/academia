@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_professor" value="name:cod_professor;datatype:int,name:nome_professor;datatype:string,name:telefone;datatype:string,name:status;datatype:string" />
+	<infoitem key="UD_ver" value="name:cod_aluno_pacote;datatype:int,name:cod_pacote_id;datatype:int,name:cod_aluno;datatype:int,name:cod_aula;datatype:int,name:cod_dia;datatype:int,name:cod_professor;datatype:int,name:desconto_aula;datatype:real,name:acrescimo_aula;datatype:real,name:hr_inicio;datatype:time,name:hr_fim;datatype:time,name:dt_ativo;datatype:date,name:dt_inativo;datatype:date,name:status;datatype:string" />
+	<infoitem key="UD_Recordset1" value="name:cod_dia;datatype:int,name:desc_dia;datatype:string" />
+	<infoitem key="UD_dias" value="name:cod_dia;datatype:int,name:desc_dia;datatype:string" />
+</info>

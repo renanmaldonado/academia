@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_ver" value="name:nome_aluno;datatype:string" />
+	<infoitem key="UD_aula" value="name:cod_aula;datatype:int,name:desc_aula;datatype:string" />
+	<infoitem key="UD_dia" value="name:cod_dia;datatype:int,name:desc_dia;datatype:string" />
+</info>

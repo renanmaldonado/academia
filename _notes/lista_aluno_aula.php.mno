@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_aula" value="name:cod_aula;datatype:int,name:desc_aula;datatype:string,name:max_aluno;datatype:int" />
+	<infoitem key="UD_dia" value="name:cod_dia;datatype:int,name:desc_dia;datatype:string" />
+	<infoitem key="UD_verifica_pacote" value="name:cod_pacote_id;datatype:int,name:cod_aluno;datatype:int,name:dt_cadastro;datatype:date,name:dia_pagto;datatype:int,name:acrescimo;datatype:real,name:desconto;datatype:real,name:justifica_acrescimo;datatype:string,name:justifica_desconto;datatype:string,name:status;datatype:string" />
+	<infoitem key="UD_ver" value="name:nome_aluno;datatype:string" />
+</info>
